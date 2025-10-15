@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vite-project</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- global container -->
+      <div class="flex min-h-screen items-center justify-center bg-slate-100">
+        <!-- card container -->
+        <div
+          class="m-3 flex flex-col space-y-10 rounded-2xl bg-white p-6 shadow-2xl md:m-0 md:flex-row md:space-y-0 md:space-x-10 md:p-16"
+        >
+          <!-- image div -->
+          <div>
+            <img
+              src="./src/images/headphone.png"
+              class="mx-auto w-60 duration-200 hover:scale-105"
+              alt=""
+            />
+          </div>
+
+          <!-- content -->
+          <div class="flex flex-col space-y-6">
+            <!-- Label and description -->
+            <div class="mb-4 flex flex-col space-y-3 text-center md:text-left">
+              <div>
+                <div
+                  class="inline-block rounded-full bg-black px-3 py-1 text-sm text-white"
+                >
+                  Free Shipping
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
