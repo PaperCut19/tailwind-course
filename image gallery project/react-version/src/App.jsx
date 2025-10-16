@@ -30,7 +30,7 @@ function App() {
             {imageArray.map((image, index) => {
               return (
                 <ImageSection
-                  key={image.index}
+                  key={index}
                   imageFileName={image.imageFileName}
                   name={image.name}
                   smallText={image.smallText}
