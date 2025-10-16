@@ -1,9 +1,9 @@
-function ImageSection({ name, smallText, imageName }) {
+function ImageSection({ name, smallText, imageFileName }) {
   return (
     <>
       {/* <!-- image 1 --> */}
       <div className="group relative hover:cursor-pointer">
-        <img src={`/images/${imageName}`} className="w-72" alt="" />
+        <img src={`/images/${imageFileName}`} className="w-72" alt="" />
         <div className="absolute right-0 bottom-0 left-0 bg-black/40 p-2 px-4 text-white opacity-0 duration-500 group-hover:opacity-100">
           <div className="flex w-full justify-between">
             <div className="font-normal">

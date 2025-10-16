@@ -2,6 +2,7 @@ import MenuItem from "./components/MenuItem";
 import SearchArea from "./components/SearchArea";
 import UploadButton from "./components/UploadButton";
 import ImageSection from "./components/ImageSection";
+import imageArray from "./imagesInfo";
 
 function App() {
   return (
@@ -26,36 +27,16 @@ function App() {
 
           {/* <!-- gallery container --> */}
           <div className="grid gap-4 md:grid-cols-3">
-            <ImageSection
-              name="Abstract Painting"
-              smallText="245 Likes - 35 Shares"
-              imageName="image1.jpg"
-            />
-            <ImageSection
-              name="Abstract Painting"
-              smallText="245 Likes - 35 Shares"
-              imageName="image2.jpg"
-            />
-            <ImageSection
-              name="Abstract Painting"
-              smallText="245 Likes - 35 Shares"
-              imageName="image3.jpg"
-            />
-            <ImageSection
-              name="Abstract Painting"
-              smallText="245 Likes - 35 Shares"
-              imageName="image4.jpg"
-            />
-            <ImageSection
-              name="Abstract Painting"
-              smallText="245 Likes - 35 Shares"
-              imageName="image5.jpg"
-            />
-            <ImageSection
-              name="Abstract Painting"
-              smallText="245 Likes - 35 Shares"
-              imageName="image6.jpg"
-            />
+            {imageArray.map((image, index) => {
+              return (
+                <ImageSection
+                  key={image.index}
+                  imageFileName={image.imageFileName}
+                  name={image.name}
+                  smallText={image.smallText}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
