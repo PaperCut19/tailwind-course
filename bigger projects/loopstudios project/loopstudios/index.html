@@ -14,13 +14,59 @@
   </head>
   <body>
     <div id="app">
-      <div class="flex items-center justify-center">
-        <h1
-          class="my-5 inline-block rounded-2xl bg-gray-300 p-2 text-2xl font-bold text-blue-800"
-        >
-          hello world
-        </h1>
-      </div>
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="bg-[url('/images/desktop/image-hero.jpg')] bg-cover bg-no-repeat max-md:bg-[url('/images/mobile/image-hero.jpg')] max-md:bg-center"
+      >
+        <!-- hero container -->
+        <div class="container mx-auto max-w-6xl px-6 py-12">
+          <!-- Menu/logo container -->
+          <nav class="flex items-center justify-between font-bold text-white">
+            <!-- logo -->
+            <img src="/images/logo.svg" alt="" />
+            <!-- menu -->
+            <div class="font-alata hidden h-10 md:flex md:space-x-8">
+              <!-- item 1 -->
+              <div class="group hover:cursor-pointer">
+                <a href="#">About</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- item 2 -->
+              <div class="group hover:cursor-pointer">
+                <a href="#">Events</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- item 3 -->
+              <div class="group hover:cursor-pointer">
+                <a href="#">Products</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- item 4 -->
+              <div class="group hover:cursor-pointer">
+                <a href="#">Support</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+            </div>
+            <!-- @todo - Hamburger Button -->
+          </nav>
+          <!-- @todo - Mobile Menu -->
+
+          <div
+            class="mt-32 mb-32 max-w-lg border-2 p-4 font-sans text-4xl text-white uppercase md:m-32 md:mx-0 md:p-10 md:text-6xl"
+          >
+            Impressive Experiences That Deliver
+          </div>
+        </div>
+      </section>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
