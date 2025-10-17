@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Josefin Sans", sans-serif;
+  --font-alata: "Alata", sans-serif;
+
+  --breakpoint-sm: 480x;
+  --breakpoint-md: 768px;
+  --breakpont-lg: 976px;
+  --breakpoint-xl: 1440px;
+}
