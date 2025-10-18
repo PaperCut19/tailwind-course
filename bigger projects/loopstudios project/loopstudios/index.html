@@ -95,6 +95,58 @@
           </div>
         </div>
       </section>
+
+      <!-- creations section -->
+      <section id="creations">
+        <!-- creations container -->
+        <div
+          class="container mx-auto my-32 max-w-6xl px-6 text-gray-900 md:px-0"
+        >
+          <!-- Creations header -->
+          <div class="mb-20 flex justify-center md:justify-between">
+            <h2 class="text-center text-4xl uppercase md:text-left md:text-5xl">
+              Our Creations
+            </h2>
+            <button class="btn hidden md:block">See All</button>
+          </div>
+
+          <!-- items container -->
+          <div
+            class="flex w-full flex-col justify-between space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8"
+          >
+            <!-- item 1 -->
+            <div
+              class="group relative overflow-hidden hover:cursor-pointer md:w-1/4"
+            >
+              <!-- desktop image -->
+              <img
+                src="/images/desktop/image-deep-earth.jpg"
+                alt=""
+                class="hidden w-full duration-200 group-hover:scale-110 md:block"
+              />
+              <!-- mobile image -->
+              <img
+                src="/images/mobile/image-deep-earth.jpg"
+                alt=""
+                class="w-full md:hidden"
+              />
+              <!-- item gradient -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 duration-500 group-hover:opacity-0"
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-gray-50 to-white opacity-0 duration-500 group-hover:opacity-70"
+              ></div>
+              <!-- item text -->
+              <h5
+                class="absolute bottom-4 w-52 px-6 duration-200 group-hover:scale-110 group-hover:text-black md:bottom-8 md:px-10"
+              >
+                Deep Earth
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>

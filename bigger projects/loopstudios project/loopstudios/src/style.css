@@ -8,4 +8,12 @@
   --breakpoint-md: 768px;
   --breakpont-lg: 976px;
   --breakpoint-xl: 1440px;
+
+  --tracking-widest: 0.3em;
+}
+
+@layer components {
+  .btn {
+    @apply font-alata my-0 hidden border-2 border-black px-10 py-2 font-bold tracking-widest uppercase hover:bg-black hover:text-white md:block;
+  }
 }
