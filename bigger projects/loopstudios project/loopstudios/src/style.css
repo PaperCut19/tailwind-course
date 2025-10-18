@@ -12,8 +12,30 @@
   --tracking-widest: 0.3em;
 }
 
+@layer base {
+  h5 {
+    @apply absolute bottom-4 w-52 px-6 duration-200 group-hover:scale-110 group-hover:text-black md:bottom-8 md:px-10;
+  }
+}
+
 @layer components {
   .btn {
-    @apply font-alata my-0 hidden border-2 border-black px-10 py-2 font-bold tracking-widest uppercase hover:bg-black hover:text-white md:block;
+    @apply font-alata my-0 border-2 border-black px-10 py-2 font-bold tracking-widest uppercase hover:cursor-pointer hover:bg-black hover:text-white md:block;
+  }
+
+  .item-container {
+    @apply flex w-full flex-col justify-between space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
+  }
+
+  .item {
+    @apply relative overflow-hidden hover:cursor-pointer md:w-1/4;
+  }
+
+  .item-gradient1 {
+    @apply absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 duration-500 group-hover:opacity-0;
+  }
+
+  .item-gradient2 {
+    @apply absolute inset-0 bg-gradient-to-b from-gray-50 to-white opacity-0 duration-500 group-hover:opacity-70;
   }
 }
