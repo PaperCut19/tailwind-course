@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -9,10 +10,8 @@
   --color-grayishViolet: hsl(257, 7%, 63%);
   --color-veryDarkBlue: hsl(255, 11%, 22%);
   --color-veryDarkViolet: hsl(260, 8%, 14%);
-
   /* Font family */
-  --font-family-sans: "Poppins", sans-serif;
-
+  --font-sans: "Poppins", sans-serif;
   /* Custom spacing */
   --spacing-180: 32rem;
 }
