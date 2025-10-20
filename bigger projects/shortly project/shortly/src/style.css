@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  /* Custom colors */
+  --color-cyan: hsl(180, 66%, 49%);
+  --color-cyanLight: hsl(180, 66%, 69%);
+  --color-darkViolet: hsl(257, 27%, 26%);
+  --color-red: hsl(0, 87%, 67%);
+  --color-grayishViolet: hsl(257, 7%, 63%);
+  --color-veryDarkBlue: hsl(255, 11%, 22%);
+  --color-veryDarkViolet: hsl(260, 8%, 14%);
+
+  /* Font family */
+  --font-family-sans: "Poppins", sans-serif;
+
+  /* Custom spacing */
+  --spacing-180: 32rem;
+}
