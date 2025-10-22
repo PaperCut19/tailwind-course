@@ -49,7 +49,7 @@
                 honestly feel I got every penny's worth.
               </p>
               <!-- small text -->
-              <p class="mt-6 line-clamp-5 opacity-50">
+              <p id="text-1" class="mt-6 line-clamp-5 opacity-50">
                 "I was an EMT for many years before I joined the bootcamp. I've
                 been looking to make a transition and have heard some people who
                 had an amazing experience here. I signed up for the free intro
@@ -65,6 +65,12 @@
                 deleniti eum, eligendi quisquam quod sed nobis exercitationem
                 tempora! "
               </p>
+              <button
+                class="text-md mt-4 tracking-wider text-green-300 underline underline-offset-4 duration-200 hover:scale-125 hover:cursor-pointer hover:no-underline"
+                onclick="toggleText('text-1', this)"
+              >
+                Read More
+              </button>
             </div>
 
             <!-- box 2 -->
@@ -87,7 +93,7 @@
                 The team was very supportive and kept me motivated
               </p>
               <!-- small text -->
-              <p class="mt-6 line-clamp-5 opacity-50">
+              <p id="text-2" class="mt-6 line-clamp-5 opacity-50">
                 "I started as a total newbie with virtually no coding skills. I
                 now work as a mobile engineer for a big company. This was one of
                 the best investments I've made in myself. Lorem ipsum dolor sit
@@ -98,6 +104,12 @@
                 Pariatur, exercitationem consequuntur praesentium a est eum
                 velit quos maiores ipsum facere tempora! "
               </p>
+              <button
+                class="text-md mt-4 tracking-wider text-green-300 underline underline-offset-4 duration-200 hover:scale-125 hover:cursor-pointer hover:no-underline"
+                onclick="toggleText('text-2', this)"
+              >
+                Read More
+              </button>
             </div>
 
             <!-- box 3 -->
@@ -122,7 +134,7 @@
                 Such a life-changing experience. Highly recommended!
               </p>
               <!-- small text -->
-              <p class="mt-6 line-clamp-20 opacity-50">
+              <p id="text-3" class="mt-6 line-clamp-30 opacity-50">
                 "Before joining the bootcamp, I've never written a line of code.
                 I needed some structure from professionals who can help me learn
                 programming step by step. I was encouraged to enroll by a former
@@ -136,6 +148,12 @@
                 certainly helped me land a job as a full-stack developer after
                 receiving multiple offers. 100% recommend!"
               </p>
+              <button
+                class="text-md mt-4 tracking-wider text-green-700 underline underline-offset-4 duration-200 hover:scale-125 hover:cursor-pointer hover:no-underline"
+                onclick="toggleText('text-3', this)"
+              >
+                Read More
+              </button>
             </div>
 
             <!-- box 4 -->
@@ -158,11 +176,17 @@
                 An overall wonderful and rewarding experience
               </p>
               <!-- small text -->
-              <p class="mt-6 line-clamp-5 opacity-50">
+              <p id="text-4" class="mt-6 line-clamp-5 opacity-50">
                 "Thank you for the wonderful experience! I now have a job I
                 really enjoy, and make a good living while doing something I
                 love."
               </p>
+              <button
+                class="text-md mt-4 tracking-wider text-green-700 underline underline-offset-4 duration-200 hover:scale-125 hover:cursor-pointer hover:no-underline"
+                onclick="toggleText('text-4', this)"
+              >
+                Read More
+              </button>
             </div>
 
             <!-- box 5 -->
@@ -187,7 +211,7 @@
                 experiences was easy.
               </p>
               <!-- small text -->
-              <p class="mt-6 line-clamp-5 opacity-50">
+              <p id="text-5" class="mt-6 line-clamp-5 opacity-50">
                 "The staff seem genuinely concerned about my progress which I
                 find really refreshing. The program gave me the confidence
                 necessary to be able to go out in the world and present myself
@@ -195,6 +219,12 @@
                 You will get the personal attention you need from an incredible
                 community of smart and amazing people."
               </p>
+              <button
+                class="text-md mt-4 tracking-wider text-green-300 underline underline-offset-4 duration-200 hover:scale-125 hover:cursor-pointer hover:no-underline"
+                onclick="toggleText('text-5', this)"
+              >
+                Read More
+              </button>
             </div>
 
             <!-- box 6 -->
@@ -217,7 +247,7 @@
                 Such a life-changing experience. Highly recommended!
               </p>
               <!-- small text -->
-              <p class="mt-6 line-clamp-5 opacity-50">
+              <p id="text-6" class="mt-6 line-clamp-5 opacity-50">
                 "Before joining the bootcamp, I've never written a line of code.
                 I needed some structure from professionals who can help me learn
                 programming step by step. I was encouraged to enroll by a former
@@ -231,11 +261,45 @@
                 certainly helped me land a job as a full-stack developer after
                 receiving multiple offers. 100% recommend!"
               </p>
+              <button
+                class="text-md mt-4 tracking-wider text-green-700 underline underline-offset-4 duration-200 hover:scale-125 hover:cursor-pointer hover:no-underline"
+                onclick="toggleText('text-6', this)"
+              >
+                Read More
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      function toggleText(textId, button) {
+        const text = document.querySelector("#" + textId);
+
+        // Check if ANY line-clamp class exists
+        const hasClamp = Array.from(text.classList).some((className) =>
+          className.startsWith("line-clamp-"),
+        );
+
+        if (hasClamp) {
+          // Remove all line-clamp classes
+          text.classList.forEach((className) => {
+            if (className.startsWith("line-clamp-")) {
+              text.classList.remove(className);
+            }
+          });
+          button.textContent = "Read Less";
+        } else {
+          // Add back the appropriate line-clamp
+          if (textId === "text-3") {
+            text.classList.add("line-clamp-30");
+          } else {
+            text.classList.add("line-clamp-5");
+          }
+          button.textContent = "Read More";
+        }
+      }
+    </script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
