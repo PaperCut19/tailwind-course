@@ -1,20 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-plus-tailwind-starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>fylo</title>
   </head>
-  <body>
+  <body class="dark:bg-darkBlue font-opensans dark:text-white">
     <div id="app">
-      <div class="flex items-center justify-center">
-        <h1
-          class="my-5 inline-block rounded-2xl bg-gray-300 p-2 text-2xl font-bold text-blue-800"
-        >
-          hello world
-        </h1>
-      </div>
+      <!-- header -->
+      <header class="container mx-auto mt-10 h-40 px-6 text-center md:h-20">
+        <!-- dynamic logo -->
+        <div
+          class="bg-logo-light-mode dark:bg-logo-dark-mode top-10 left-10 mx-auto h-20 w-48 bg-no-repeat md:absolute md:mx-0"
+        ></div>
+      </header>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
