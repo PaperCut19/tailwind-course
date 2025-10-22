@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  /* Custom breakpoints */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 976px;
+  --breakpoint-xl: 1440px;
+
+  /* Custom font family */
+  --font-sans: "Barlow Semi Condensed", sans-serif;
+}
