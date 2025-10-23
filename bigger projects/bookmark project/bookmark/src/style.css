@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+  /* Custom Breakpoints */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1020px;
+  --breakpoint-xl: 1440px;
+
+  /* Custom Colors */
+  --color-softBlue: hsl(231, 69%, 60%);
+  --color-softRed: hsl(0, 94%, 66%);
+  --color-grayishBlue: hsl(229, 8%, 60%);
+  --color-veryDarkBlue: hsl(229, 31%, 21%);
+
+  /* Custom Font Family */
+  --font-sans: "Rubik", sans-serif;
+
+  /* Custom Background Image */
+  --background-image-dots: url("/images/bg-dots.svg");
+}
