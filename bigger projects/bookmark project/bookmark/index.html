@@ -12,14 +12,34 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <div id="app">
-      <div class="flex items-center justify-center">
-        <h1
-          class="my-5 inline-block rounded-2xl bg-gray-300 p-2 text-2xl font-bold text-blue-800"
-        >
-          hello world
-        </h1>
+      <div class="nav relative container mx-auto p-6">
+        <!-- flex container for nav items -->
+        <div class="my-6 flex items-center justify-between space-x-20">
+          <!-- logo -->
+          <div class="z-30">
+            <img src="/images/logo-bookmark.svg" alt="" id="logo" />
+          </div>
+          <!-- menu items -->
+          <div
+            class="text-grayishBlue hidden items-center space-x-10 uppercase md:flex"
+          >
+            <a class="hover:text-softRed tracking-widest" href="#features"
+              >Features</a
+            >
+            <a class="hover:text-softRed tracking-widest" href="#download"
+              >Download</a
+            >
+            <a class="hover:text-softRed tracking-widest" href="#faq">FAQ</a>
+
+            <a
+              href="#"
+              class="bg-softRed border-softRed hover:text-softRed rounded-lg border-2 px-8 py-2 text-white shadow-lg duration-200 hover:bg-white"
+              >Login</a
+            >
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>
