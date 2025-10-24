@@ -22,14 +22,14 @@ function onTabClick(e) {
 
   // Hide all panels
   panels.forEach((panel) => panel.classList.add('hidden'))
+  panels.forEach((panel) => panel.classList.remove("flex"))
 
   // Activate a new tab and panel based on the target
-  e.target.classList.add('border-softRed', 'border-b-4')
-  const classString = e.target.getAttribute('data-target')
-  document
-    .getElementById('panels')
-    .getElementsByClassName(classString)[0]
-    .classList.remove('hidden')
+  e.currentTarget.children[0].classList.add('border-softRed', 'border-b-4')
+  const classString = e.currentTarget.getAttribute('data-target')
+  const elementToActivate = document.getElementById('panels').getElementsByClassName(classString)[0]
+  elementToActivate.classList.remove('hidden')
+  elementToActivate.classList.add('flex')
 }
 
 function navToggle() {
