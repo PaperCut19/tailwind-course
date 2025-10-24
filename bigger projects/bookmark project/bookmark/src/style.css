@@ -19,3 +19,9 @@
   /* Custom Background Image */
   --background-image-dots: url("/images/bg-dots.svg");
 }
+
+@layer components {
+  .bg-tabs {
+    @apply bg-softBlue absolute top-60 right-[60%] h-[300px] rounded-r-full lg:w-[2000px];
+  }
+}
