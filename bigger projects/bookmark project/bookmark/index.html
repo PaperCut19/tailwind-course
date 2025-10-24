@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -513,6 +513,81 @@
           </div>
         </div>
       </section>
+      <!-- newsletter section -->
+      <section id="newsletter" class="bg-softBlue">
+        <!-- main container -->
+        <div class="mx-auto max-w-lg py-24">
+          <p
+            class="mb-6 text-center text-lg tracking-widest text-white uppercase"
+          >
+            35,000+ Already Joined
+          </p>
+          <h2
+            class="mb-6 px-3 text-center text-3xl font-semibold text-white md:text-4xl"
+          >
+            Stay up-to-date with what we're doing
+          </h2>
+          <!-- form -->
+          <form
+            class="mx-auto flex max-w-2xl flex-col items-start justify-center space-y-6 px-6 text-base md:flex-row md:space-y-0 md:space-x-4 md:px-0"
+          >
+            <!-- input and button container -->
+            <div
+              class="mx-auto flex flex-col items-center justify-between md:mx-0 md:flex-row"
+            >
+              <input
+                type="text"
+                class="mb-4 flex-1 rounded-lg border-1 border-white bg-white px-6 pt-3 pb-2 focus:outline-none md:mr-3 md:mb-0"
+                placeholder="Enter your email address"
+              />
+
+              <input
+                type="submit"
+                class="bg-softRed inline-flex transform cursor-pointer rounded-lg px-6 py-3 text-center font-semibold text-white duration-200 hover:opacity-90 focus:outline-none"
+                value="Contact Us"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- footer -->
+      <footer class="bg-veryDarkBlue py-16">
+        <!-- footer flex container -->
+        <div
+          class="container mx-auto flex flex-col items-center justify-between space-y-16 px-6 md:flex-row md:space-y-0"
+        >
+          <!-- logo/menu container -->
+          <div
+            class="text-grayishBlue flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14"
+          >
+            <img src="/images/logo-bookmark-footer.svg" alt="" />
+            <a href="#features" class="hover:text-softRed uppercase"
+              >Features</a
+            >
+            <a href="#download" class="hover:text-softRed uppercase"
+              >Download</a
+            >
+            <a href="#faq" class="hover:text-softRed uppercase">FAQ</a>
+          </div>
+          <!-- social container -->
+          <div class="flex space-x-10">
+            <a href="#">
+              <img
+                src="/images/icon-facebook.svg"
+                class="h-6 cursor-pointer duration-200 hover:scale-125"
+                alt=""
+              />
+            </a>
+            <a>
+              <img
+                src="/images/icon-twitter.svg"
+                class="h-6 cursor-pointer duration-200 hover:scale-125"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
